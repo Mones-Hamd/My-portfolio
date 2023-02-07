@@ -74,7 +74,23 @@
     font-size: 2rem;
   }
 }
+.paragraph-text{
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-align: start;
+  color: var(--black-color);
+  span {
+    color: var(--secondary-color);
+  }
 
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
 .p-text {
   font-size: 0.8rem;
   text-align: left;

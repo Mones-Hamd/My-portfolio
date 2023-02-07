@@ -11,6 +11,10 @@ import node from '../assets/node.png';
 import git from '../assets/git.png';
 import css from '../assets/css.png';
 import python from '../assets/python.png';
+import fast from '../assets/fast.png';
+import responsive from '../assets/responsive.png';
+import intuitive from '../assets/Intuitive.png';
+import dynamic from '../assets/dynamic.png';
 export default {
   myPhoto,
   circle,
@@ -25,4 +29,8 @@ export default {
   git,
   css,
   python,
+  fast,
+  responsive,
+  intuitive,
+  dynamic,
 };
