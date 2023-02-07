@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import images from '../../constants/images';
 import './About.scss';
+import { AppWrap } from '../../wrapper';
 
 const About = () => {
   const aboutData = [
@@ -85,4 +86,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, 'About');
