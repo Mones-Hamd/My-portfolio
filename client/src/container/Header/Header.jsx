@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Header.scss';
 import images from '../../constants/images';
+import { AppWrap } from '../../wrapper';
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -26,7 +27,7 @@ const Header = () => {
     images.git,
   ];
   return (
-    <div className="app__header app__flex" id="home">
+    <div className="app__header app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 1, delayChildren: 1 }}
@@ -76,4 +77,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrap(Header, 'Home');
