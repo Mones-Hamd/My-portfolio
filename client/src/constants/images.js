@@ -15,6 +15,10 @@ import fast from '../assets/fast.png';
 import responsive from '../assets/responsive.png';
 import intuitive from '../assets/Intuitive.png';
 import dynamic from '../assets/dynamic.png';
+import sql from '../assets/sql.png';
+import nosql from '../assets/mongodb.png';
+import algorithm from "../assets/algorithm.png"
+import dataStructure from "../assets/datastructure.png"
 export default {
   myPhoto,
   circle,
@@ -33,4 +37,8 @@ export default {
   responsive,
   intuitive,
   dynamic,
+  sql,
+  nosql,
+  algorithm,
+  dataStructure
 };
