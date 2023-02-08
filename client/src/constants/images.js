@@ -23,6 +23,8 @@ import komJe from '../assets/komJe.GIF';
 import sirra from '../assets/Sirra.png';
 import shopiee from '../assets/shopiee.png';
 import movie from '../assets/Movie.jpeg';
+import mobile from '../assets/mobile.png';
+import email from '../assets/email.png';
 export default {
   myPhoto,
   circle,
@@ -49,4 +51,6 @@ export default {
   sirra,
   movie,
   shopiee,
+  mobile,
+  email,
 };
