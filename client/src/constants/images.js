@@ -17,8 +17,12 @@ import intuitive from '../assets/Intuitive.png';
 import dynamic from '../assets/dynamic.png';
 import sql from '../assets/sql.png';
 import nosql from '../assets/mongodb.png';
-import algorithm from "../assets/algorithm.png"
-import dataStructure from "../assets/datastructure.png"
+import algorithm from '../assets/algorithm.png';
+import dataStructure from '../assets/datastructure.png';
+import komJe from '../assets/komJe.GIF';
+import sirra from '../assets/Sirra.png';
+import shopiee from '../assets/shopiee.png';
+import movie from '../assets/Movie.jpeg';
 export default {
   myPhoto,
   circle,
@@ -40,5 +44,9 @@ export default {
   sql,
   nosql,
   algorithm,
-  dataStructure
+  dataStructure,
+  komJe,
+  sirra,
+  movie,
+  shopiee,
 };
