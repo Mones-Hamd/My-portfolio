@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './Header.scss';
 import images from '../../constants/images';
 import { AppWrap } from '../../wrapper';
+import { circlesData } from '../../constants/data';
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -14,18 +15,6 @@ const scaleVariants = {
   },
 };
 const Header = () => {
-  const circlesData = [
-    images.mu5,
-    images.reactPng,
-    images.sass,
-    images.css,
-    images.figma,
-    images.javascript,
-    images.typescript,
-    images.node,
-    images.python,
-    images.git,
-  ];
   return (
     <div className="app__header app__flex">
       <motion.div

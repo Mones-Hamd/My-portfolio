@@ -25,7 +25,7 @@ import shopiee from '../assets/shopiee.png';
 import movie from '../assets/Movie.jpeg';
 import mobile from '../assets/mobile.png';
 import email from '../assets/email.png';
-export default {
+const images = {
   myPhoto,
   circle,
   mu5,
@@ -54,3 +54,4 @@ export default {
   mobile,
   email,
 };
+export default images;

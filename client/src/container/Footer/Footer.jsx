@@ -1,51 +1,15 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import images from '../../constants/images';
 import './Footer.scss';
-import emailjs from '@emailjs/browser';
+import Contact from '../../components/Contact/Contact';
 
 const Footer = () => {
-  const form = useRef();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const [isSubmit, setIsSubmit] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState();
-  const { name, email, message } = formData;
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    emailjs
-      .sendForm(
-        'service_hyq8c9m',
-        'template_zir271p',
-        form.current,
-        'ka7QukjxmjVc10j3M',
-      )
-      .then(
-        (result) => {
-          setIsSubmit(true);
-          setIsLoading(false);
-        },
-        (error) => {
-          setIsLoading(false);
-
-          setError(error.text);
-        },
-      );
-  };
   return (
     <>
       <h2 className="head-text">
         {' '}
-        Take a <span>rest</span>, And drop me a <span>text</span>
+        Take <span>rest</span>, And drop me <span>text</span>
       </h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
@@ -62,56 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="app__footer-form app__flex">
-        {!isSubmit ? (
-          <form
-            className="app__footer-form app__flex"
-            ref={form}
-            onSubmit={handleSubmit}
-          >
-            <div className="app__flex">
-              <input
-                className="p-text"
-                type="text"
-                placeholder="Your Name"
-                name="name"
-                value={name}
-                onChange={handleChangeInput}
-              />
-            </div>
-            <div className="app__flex">
-              <input
-                className="p-text"
-                type="email"
-                placeholder="Your Email"
-                name="email"
-                value={email}
-                onChange={handleChangeInput}
-              />
-            </div>
-            <div className="app__flex">
-              <textarea
-                className="p-text"
-                type="text"
-                placeholder="Your Message"
-                name="message"
-                value={message}
-                onChange={handleChangeInput}
-              />
-            </div>
-            <button type="submit" className="p-text">
-              {isLoading ? 'Sending..' : 'Send Message'}
-            </button>
-          </form>
-        ) : (
-          <div>
-            <h3 className="head-text"> Thank you for getting in touch </h3>
-          </div>
-        )}
-        {error && (
-          <div>
-            <h3 className="head-text"> Somthing went wrong </h3>
-          </div>
-        )}
+        <Contact />
       </div>
     </>
   );

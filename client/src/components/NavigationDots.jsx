@@ -1,10 +1,9 @@
 import React from 'react';
-
+import { navData } from '../constants/data';
 const NavigationDots = ({ active }) => {
-  const data = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
   return (
     <div className="app__navigation">
-      {data.map((item, index) => (
+      {navData.map((item, index) => (
         <a
           href={`#${item}`}
           key={item + index}
