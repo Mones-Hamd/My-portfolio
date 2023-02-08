@@ -1,34 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import images from '../../constants/images';
 import './About.scss';
 import { AppWrap } from '../../wrapper';
-
+import { aboutData } from '../../constants/data';
 const About = () => {
-  const aboutData = [
-    {
-      title: 'Fast',
-      paragraph:
-        'Fast load times and lag free interaction, my highest priority.',
-      imagUrl: images.fast,
-    },
-    {
-      title: 'Responsive',
-      paragraph: 'My layouts will work on any device, big or smal',
-      imagUrl: images.responsive,
-    },
-    {
-      title: 'Intuitive',
-      paragraph: 'Strong preference for easy to use, intuitive UX/UI.',
-      imagUrl: images.intuitive,
-    },
-    {
-      title: 'Dynamic',
-      paragraph:
-        "Websites don't have to be static, I love making pages come to life.",
-      imagUrl: images.dynamic,
-    },
-  ];
   return (
     <>
       <motion.div

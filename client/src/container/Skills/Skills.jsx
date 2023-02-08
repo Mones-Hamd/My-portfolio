@@ -2,23 +2,9 @@ import React from 'react';
 import './Skills.scss';
 import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
-import ReactTooltip from 'react-tooltip';
-import images from '../../constants/images';
+
+import { skillsData } from '../../constants/data';
 const Skills = () => {
-  const skillsData = [
-    { name: 'JavaScript', imageUrl: images.javascript },
-    { name: 'TypeScript', imageUrl: images.typescript },
-    { name: 'Python', imageUrl: images.python },
-    { name: 'NodeJS', imageUrl: images.node },
-    { name: 'SQL', imageUrl: images.sql },
-    { name: 'No-SQL', imageUrl: images.nosql },
-    { name: 'Data Structure', imageUrl: images.dataStructure },
-    { name: 'Algorithms', imageUrl: images.algorithm },
-    { name: 'React', imageUrl: images.reactPng },
-    { name: 'Figma', imageUrl: images.figma },
-    { name: 'CSS', imageUrl: images.css },
-    { name: 'HTML', imageUrl: images.html },
-  ];
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>

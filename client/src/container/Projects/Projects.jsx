@@ -2,52 +2,12 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import './Projects.scss';
-import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
-
-const ProjectsData = [
-  {
-    name: 'Shoppie App',
-    Description:
-      'shopiee app is a platform where you can sell and buy your used items or by a second hand items . (Still under Development)',
-    tag: ['React JS', 'All', 'Web App'],
-    projectUrl: '',
-    codeUrl: 'https://github.com/Mones-Hamd/Shopiee-App',
-    imageUrl: images.shopiee,
-  },
-  {
-    name: 'Kom je App',
-    Description:
-      'This is the final project for the HackYourFuture curriculum we did as a class using the MERN stack by following the agile methodology with our team and a group of mentors',
-    tag: ['React JS', 'All', 'Web App', 'Agile'],
-    projectUrl: 'https://c38-group1.herokuapp.com/',
-    codeUrl: 'https://github.com/Mones-Hamd/FinalProjectHYF',
-    imageUrl: images.komJe,
-  },
-  {
-    name: 'Sirra App',
-    Description:
-      "Sirra app is an app that the user can interact with by choosing the current feeling, (using API's).",
-    tag: ['All', 'Web App'],
-    projectUrl: 'https://mones-hamd.github.io/Sirra-App-API/',
-    codeUrl: 'https://github.com/Mones-Hamd/Sirra-App-API',
-    imageUrl: images.sirra,
-  },
-  {
-    name: 'Movie Land App',
-    Description: 'simple one hour App to practice using React.',
-    tag: ['React JS', 'All', 'Web App'],
-    projectUrl: '',
-    codeUrl: 'https://github.com/Mones-Hamd/Movie-Land-App',
-    imageUrl: images.movie,
-  },
-];
+import { ProjectsData, projectsCategoryData } from '../../constants/data';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState([{ y: 0, opacity: 1 }]);
   const [filterdProjects, setFilteredProjects] = useState(ProjectsData);
-
-  const projectsCategoryData = ['React JS', 'Agile', 'Web App', 'All'];
 
   const handleProjectsFilter = (item) => {
     setActiveFilter(item);
