@@ -5,9 +5,8 @@
 max-width: 52%;
 
  margin: 2rem auto;
- p{
-   font-size: 1rem;
- } 
+
+
 }
 .app__about{
   flex: 1;
@@ -36,10 +35,10 @@ max-width: 52%;
     object-fit: cover;
   }
   @media screen and (min-width:2000px) {
-    width: 370px;
-    margin: 2rem 4rem;
+    width: 300px;
+    margin: 2rem 3rem;
     img{
-      height: 320px;
+      height: 350px;
     }
 
     
