@@ -2,6 +2,7 @@ import React from 'react';
 import { About, Footer, Header, Projects, Skills } from './container';
 import { Navbar } from './components';
 import './App.scss';
+import Experiances from './container/Experiances/Experiances';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <Header />
       <About />
+      <Experiances />
       <Skills />
       <Projects />
       <Footer />

@@ -31,8 +31,7 @@ const Header = () => {
             </div>
           </div>
           <div className="tag-cmp app__flex">
-            <p className="p-text">Full-stack Web Developer</p>
-            <p className="p-text">Motivate to learn more </p>
+            <p className="p-text">The best way to predict the future is to invent it. </p>
           </div>
         </div>
       </motion.div>
@@ -41,7 +40,8 @@ const Header = () => {
         transition={{ duration: 1, delayChildren: 1 }}
         className="app__header-img"
       >
-        <img src={images.myPhoto} alt="profile" width={520} height={600} />
+       
+        <img src={images.myPhoto} alt="profile" className='app__header-img-profile' />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
@@ -50,6 +50,7 @@ const Header = () => {
           className="overlay-circle"
         />
       </motion.div>
+      
 
       <motion.div
         variants={scaleVariants}

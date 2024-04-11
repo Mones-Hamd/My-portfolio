@@ -25,6 +25,13 @@ import shopiee from '../assets/shopiee.png';
 import movie from '../assets/Movie.jpeg';
 import mobile from '../assets/mobile.png';
 import email from '../assets/email.png';
+import airflow from '../assets/airflow.png';
+import awsS3 from '../assets/awsS3.png';
+import gcp from '../assets/gcp.png';
+import bq from '../assets/bq.png';
+import docker from '../assets/docker.png';
+import k8s from '../assets/k8s.png';
+import databricks from '../assets/databricks.png';
 const images = {
   myPhoto,
   circle,
@@ -53,5 +60,12 @@ const images = {
   shopiee,
   mobile,
   email,
+  airflow,
+  k8s,
+  docker,
+  awsS3,
+  gcp,
+  bq,
+  databricks
 };
 export default images;

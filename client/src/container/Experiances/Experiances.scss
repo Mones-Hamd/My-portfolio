@@ -1,0 +1,41 @@
+.app__experience-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .app__experience-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .app__experience-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app__experience-company {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app__experience-period {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app__experience-responsibilities {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+  
+  .app__experience-responsibilities li {
+    margin-bottom: 0.5rem;
+  }
+  

@@ -13,7 +13,7 @@ const About = () => {
       >
         <h2 className="head-text">
           {' '}
-          <span>Passionate</span> full-stack Developer
+          <span>Welcome</span> to My Digital Space!
         </h2>
       </motion.div>
       <motion.div
@@ -23,19 +23,13 @@ const About = () => {
       >
         <p className="paragraph-text">
           {' '}
-          Passionate about new technologies, <span>search </span>a lot to keep
-          my knowledge up-to-date to keep up with the<span> job market</span> .
+          a dedicated and enthusiastic software engineer on a mission to craft innovative solutions
+           and push the boundaries of technology. With a passion for problem-solving and a keen eye for detail,
+            I thrive in dynamic environments
+             where I can collaborate with like-minded individuals to bring ideas to life.
           <br />
         </p>
-        <p className="paragraph-text ">
-          {' '}
-          Graduated :{' '}
-          <span>
-            <a href="https://www.hackyourfuture.net/">
-              Hack Your future - Amsterdam
-            </a>
-          </span>
-        </p>
+       
       </motion.div>
       <div className="app__profiles">
         {aboutData.map((item, index) => (
